@@ -1,0 +1,27 @@
+Alex Kempen's FeatureScript Documentation
+=========================================
+
+.. image:: /images/robotRender.png
+   :width: 400
+   :align: center
+
+Welcome to the documentation site for all of my FeatureScripts. FeatureScripts are powerful design tools which can be used
+to simply or automate many aspects of design in Onshape.
+
+To learn how to install and use FeatureScripts, see :ref:`getting-started`.
+
+.. toctree::
+   :maxdepth: 2
+
+   getting-started/getting-started
+   robotics/robotics
+   general/general
+   miscellaneous/miscellaneous
+   glossary/glossary
+   
+.. Indices and tables
+   ==================
+
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`

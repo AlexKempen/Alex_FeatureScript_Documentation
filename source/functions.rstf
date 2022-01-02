@@ -1,0 +1,10 @@
+.. |checkmark| image:: /images/greencheck.png
+    :height: 18
+
+.. |confirm-feature| replace:: Click |checkmark|.
+
+.. |flip| image:: /images/flip.png
+    :height: 18
+
+.. |rotate| image:: /images/rotate.png
+    :height: 18
