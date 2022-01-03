@@ -18,11 +18,11 @@ Glossary
     Feature dialog
         The term feature dialog refers to the menu that is shown when creating or editing a feature.
 
-    Feature list
+    Feature tree
         The list of features in a part studio which can be found on the left side of your screen.
 
     Parts list
-        The list of all parts in a part studio. The parts list exists in the bottom left of your screen, underneath the feature list.
+        The list of all parts in a part studio. The parts list exists in the bottom left of your screen, underneath the feature tree.
 
     FeatureScript dropdown
         Your FeatureScript fropdown is a section of your part studio toolbar which is reserved for custom features you've added there.

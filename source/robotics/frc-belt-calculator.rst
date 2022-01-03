@@ -18,8 +18,8 @@ Steps for creating belt runs
 #. Create an FRC belt calculator feature by selecting it from your :term:`FeatureScript dropdown`.
 #. In the **Position** tab:
 
-    * Specify a **Pulley one position** and a **Pulley two position** by clicking on vertices, cylinders, or edges in the :term:`graphics window<Graphics window>`.
-    * If desired, specify an **Offset location** and a **Offset** for your belt run. Also, use |flip| to reverse the direction of the **Offset**.
+    * Specify a **Pulley one position** and a **Pulley two position** by selecting vertices or cylindrical faces.
+    * If desired, specify an **Offset location** and a **Offset** for your belt run, and use |flip| to reverse the direction of the **Offset**.
 
     .. image:: positionTab.png
         :width: 40%
@@ -84,7 +84,7 @@ When both pulley positions are defined in the **Position** tab, the FRC belt cal
 To correct a belt center to center distance error, change the distance between your **Pulley one position** and **Pulley two position** selections to match the value displayed in the error tooltip.
 
 .. tip::
-    The error tooltip can be seen at the top of the screen while the FRC belt calculator feature is being edited or by mousing over a broken FRC belt calculator feature in the :term:`feature list<Feature list>`.
+    The error tooltip can be seen at the top of the screen while the FRC belt calculator feature is being edited, or by mousing over a broken FRC belt calculator feature in the :term:`feature tree<Feature tree>`.
 
     .. image:: beltFeatureListError.png
         :width: 70%
