@@ -1,5 +1,5 @@
-# Raider Robotics Documentation Website
+# Alex's FeatureScript Documentation
 
-[![Build and Deploy](https://github.com/msoe-vex/docs/actions/workflows/gh-pages-deploy.yml/badge.svg?branch=main)](https://github.com/msoe-vex/docs/actions/workflows/gh-pages-deploy.yml)
+# [![Build and Deploy](https://github.com/msoe-vex/docs/actions/workflows/gh-pages-deploy.yml/badge.svg?branch=main)](https://github.com/msoe-vex/docs/actions/workflows/gh-pages-deploy.yml)
 
-View this website by visiting [docs.msoevex.com](http://docs.msoevex.com).
+View this website by visiting [docs.alexFS.com](http://docs.alexFS.com).
