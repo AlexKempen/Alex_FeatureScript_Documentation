@@ -18,6 +18,9 @@ Assembly mirror facilitates assembly behavior by adding mate connectors to parts
 
     |pic1| |pic2|
 
+The Assembly mirror FeatureScript can be found here:
+`Assembly mirror document <https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/w/665f10f209a25a1f8883d8b5/e/1ad7ea5f13d67f72a3907dde>`_
+
 .. |pic1| image:: assemblyMirrorMate.png
     :width: 52.5%
     :alt: An example Assembly mirror part studio

@@ -1,2 +1,10 @@
-.vscode/
+# User ignores
+.vscode/*
+!.vscode/tasks.json
+docs-venv/
+
+# Sphinx build artifacts
 build/
+**/.history/
+**/_build/
+**/venv/

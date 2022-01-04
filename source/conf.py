@@ -34,6 +34,7 @@ author = 'Alex Kempen'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'readthedocs_ext.readthedocs',
     'sphinx_rtd_theme',
 	'myst_parser',
     'sphinx.ext.autosectionlabel',
@@ -52,8 +53,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-html_favicon = 'icons/favicon.ico'
-
+# html_favicon = 'icons/favicon.ico'
 
 # -- Options for HTML output -------------------------------------------------
 
