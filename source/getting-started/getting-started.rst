@@ -18,5 +18,5 @@ Steps for using FeatureScripts
 ------------------------------
 
 
-Tips for using FeatureScripts
------------------------------
+Tips for using feature UI
+-------------------------
