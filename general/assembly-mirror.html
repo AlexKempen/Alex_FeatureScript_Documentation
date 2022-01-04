@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Assembly mirror &mdash; Alex&#39;s FeatureScript Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Variable library suite" href="variable-library-suite.html" />
+    <link rel="prev" title="Point derive" href="point-derive.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Alex's FeatureScript Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotics/robotics.html">Robotics FeatureScripts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="general.html">General Purpose FeatureScripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="point-derive.html">Point derive</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Assembly mirror</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-mirrored-parts">Steps for creating mirrored parts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-mirrored-parts-using-preselections">Steps for creating mirrored parts using preselections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result-behavior">Result behavior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-part-names">Copy part names</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="variable-library-suite.html">Variable library suite</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/miscellaneous.html">Miscellaneous FeatureScripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Alex's FeatureScript Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="general.html">General Purpose FeatureScripts</a> &raquo;</li>
+        
+      <li>Assembly mirror</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/general/assembly-mirror.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="assembly-mirror">
+<h1>Assembly mirror<a class="headerlink" href="#assembly-mirror" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="../_images/assemblyMirrorPrt2.png"><img alt="An example Assembly mirror part studio" src="../_images/assemblyMirrorPrt2.png" style="width: 49.5%;" /></a> <a class="reference internal" href="../_images/assemblyMirrorAsm2.png"><img alt="An example of an assembly assisted by Assembly mirror" src="../_images/assemblyMirrorAsm2.png" style="width: 49.5%;" /></a></p>
+<p>Assembly mirror facilitates assembly behavior by adding mate connectors to parts which allow instances of those parts to be quickly placed in mirrored positions in assemblies.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Since FeatureScripts cannot be used directly in assemblies, the Assembly mirror feature cannot create transformed copies of parts directly inside assemblies. Instead, the Assembly mirror feature works by adding mate connectors to parts inside part studios which allow copies of those parts to be assembeled into mirrored positions later on.</p>
+<p><a class="reference internal" href="../_images/assemblyMirrorMate.png"><img alt="An example Assembly mirror part studio" src="../_images/assemblyMirrorMate.png" style="width: 52.5%;" /></a> <a class="reference internal" href="../_images/assemblyMirrorAssembly.png"><img alt="An example of an assembly assisted by Assembly mirror" src="../_images/assemblyMirrorAssembly.png" style="width: 46.5%;" /></a></p>
+</div>
+<div class="section" id="steps-for-creating-mirrored-parts">
+<h2>Steps for creating mirrored parts<a class="headerlink" href="#steps-for-creating-mirrored-parts" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Create an Assembly mirror feature by selecting it from your <a class="reference internal" href="../glossary/glossary.html#term-FeatureScript-dropdown"><span class="xref std std-term">FeatureScript dropdown</span></a>.</p></li>
+<li><p>Specify your desired result behavior (<strong>Part center</strong> or <strong>Origin</strong>).</p></li>
+</ol>
+<blockquote>
+<div><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#result-behavior"><span class="std std-ref">Result behavior</span></a> for more information.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Specify one or more <strong>Entities</strong> (parts or surfaces) to find transforms for.</p></li>
+<li><p>Select a <strong>Mirror plane</strong> to mirror about.</p></li>
+<li><p>The Assembly mirror feature will automatically try each possible transform type (<strong>Linear</strong>, <strong>Z axis</strong>, <strong>Y axis</strong>, <strong>X axis</strong>, and <strong>Mirror</strong>) for each part and select the one that matches a part to its mirror image.</p></li>
+</ol>
+<blockquote>
+<div><p>If a valid transform is found, the transform type of the part will be updated with the valid transform, a mirror image of the part will be shown in blue in the <a class="reference internal" href="../glossary/glossary.html#term-Graphics-window"><span class="xref std std-term">graphics window</span></a>, and a mate connector which can be used to assemble the part in the location of its mirror image will be created.</p>
+<a class="reference internal image-reference" href="../_images/assemblyMirrorPartGhost.png"><img alt="An example Assembly mirror part studio" class="align-center" src="../_images/assemblyMirrorPartGhost.png" style="width: 70%;" /></a>
+<p>Otherwise, the transform type of the part will be changed to <strong>Mirror</strong>, and a mirrored copy of the part will be created.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since Assembly mirror cannot compute surface transform types automatically, the transform type of surfaces will always default to <strong>Mirror</strong> and will need to be changed manually.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The transform type will only be computed automatically when a feature is first selected. If you make changes to the part later on, you may need to re-select the part or update the transform type manually.</p>
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic">
+<li><p>Choose whether to <strong>Copy part names</strong> to the mirrored versions of entities.</p>
+<blockquote>
+<div><p>If you’ve chosen <strong>Copy part names</strong>, you may also specify:</p>
+<ul class="simple">
+<li><p>A <strong>Prefix</strong> and <strong>Suffix</strong> to add to every mirrored part name</p></li>
+<li><p><strong>Update saved names</strong>, to update the internally saved names of every part</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike a normal boolean, choosing <strong>Update saved names</strong> should result in <strong>Update saved names</strong> immediately becoming unchecked again. This is expected, and indicates that the update operation has succeeded.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#copy-part-names"><span class="std std-ref">Copy part names</span></a> for more information.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/assemblyMirrorUI.png"><img alt="The Assembly mirror UI" class="align-center" src="../_images/assemblyMirrorUI.png" style="width: 40%;" /></a>
+</div>
+<div class="section" id="steps-for-creating-mirrored-parts-using-preselections">
+<h2>Steps for creating mirrored parts using preselections<a class="headerlink" href="#steps-for-creating-mirrored-parts-using-preselections" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Before creating an Assembly mirror feature:</p>
+<blockquote>
+<div><ul>
+<li><p>Pre-select a <strong>Mirror plane</strong> and one or more <strong>Entities</strong> to mirror by either:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Selecting parts and planes directly from the <a class="reference internal" href="../glossary/glossary.html#term-Feature-tree"><span class="xref std std-term">feature tree</span></a> or <a class="reference internal" href="../glossary/glossary.html#term-Parts-list"><span class="xref std std-term">parts list</span></a></p></li>
+<li><p>Selecting geometry (edges, faces, or vertices) in the <a class="reference internal" href="../glossary/glossary.html#term-Graphics-window"><span class="xref std std-term">graphics window</span></a> which touch the entities you’d like to use</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/assemblyMirrorPreselection.png"><img alt="An example preselection" class="align-center" src="../_images/assemblyMirrorPreselection.png" style="width: 60%;" /></a>
+</div></blockquote>
+</li>
+<li><p>Create an Assembly mirror feature by selecting it from your <a class="reference internal" href="../glossary/glossary.html#term-FeatureScript-dropdown"><span class="xref std std-term">FeatureScript dropdown</span></a>.</p></li>
+<li><p>The <strong>Entities</strong> and <strong>Mirror plane</strong> parameters are filled in automatically according to your preselections.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/assemblyMirrorPreselectionUse.png"><img alt="The result of using a preselection" class="align-center" src="../_images/assemblyMirrorPreselectionUse.png" style="width: 80%;" /></a>
+</div></blockquote>
+</li>
+<li><p>Specify additional parameters as needed.</p></li>
+<li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Several native Onshape features also support preselections. For example, the Onshape Plane feature will automatically switch to
+<strong>Line angle</strong> mode if you select a plane and a line prior to creating the feature.</p>
+</div>
+</div>
+<div class="section" id="result-behavior">
+<span id="id1"></span><h2>Result behavior<a class="headerlink" href="#result-behavior" title="Permalink to this headline">¶</a></h2>
+<p>Assembly mirror offers two options for locating mirrored parts; <strong>Part center</strong> and <strong>Origin</strong>.</p>
+<ul class="simple">
+<li><p><strong>Part center</strong>: Mate connectors are created such that entity mirrors are aligned when their center mate connectors are fastened together.</p></li>
+<li><p><strong>Origin</strong>: Mate connectors are located relative to the world origin, so mirrors are aligned when their mate connectors are fastened to the part studio origin. To assist with this, care should be taken that the assembly origin matches the part studio origin.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When using <strong>Origin</strong>, make assembling faster and more robust by createing a mate connector at the assembly origin and selecting it via the Mate Features list.</p>
+</div>
+</div>
+<div class="section" id="copy-part-names">
+<span id="id2"></span><h2>Copy part names<a class="headerlink" href="#copy-part-names" title="Permalink to this headline">¶</a></h2>
+<p>The copy part name behavior is as follows:</p>
+<ol class="arabic simple">
+<li><p>When parts are first selected, their names at the time of selection are also saved.</p></li>
+<li><p>If an entity has its transform type set to <strong>Mirror</strong>, a mirror of that entity is created. If <strong>Copy part names</strong> is enabled, the saved entity name is applied (along with the <strong>Suffix</strong> and <strong>Prefix</strong>, if specified).</p></li>
+</ol>
+<p>There are a few notable limitations to this functionality:</p>
+<ol class="arabic">
+<li><p>Editing the name of a entity which is being mirrored by Assembly mirror will not automatically update the name of the mirrored entity. To get the mirrored entity names to update, click <strong>Update saved names</strong>.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike a normal boolean, choosing <strong>Update saved names</strong> should result in <strong>Update saved names</strong> immediately becoming unchecked again. This is expected, and indicates that the update operation has succeeded.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Manually changing the name applied to a entity mirrored by the Assembly mirror FeatureScript will result in the FeatureScript applied value becoming shadowed until all properties of the entity are reset.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Manually changing any property on a part which has been set by a FeatureScript, like color, material, or name, will shadow the FeatureScript applied property until all properties on the part are reset.</p>
+<p>To reset the properties of a part:</p>
+<ol class="arabic simple">
+<li><p>Right click on the part in the <a class="reference internal" href="../glossary/glossary.html#term-Parts-list"><span class="xref std std-term">parts list</span></a>.</p></li>
+<li><p>Click <strong>Properties…</strong>.</p></li>
+<li><p>Click <strong>Reset all</strong>.</p></li>
+<li><p>Click <strong>Save</strong>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="variable-library-suite.html" class="btn btn-neutral float-right" title="Variable library suite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="point-derive.html" class="btn btn-neutral float-left" title="Point derive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alex Kempen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
