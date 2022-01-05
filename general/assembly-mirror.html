@@ -185,6 +185,7 @@
 <p>Since FeatureScripts cannot be used directly in assemblies, the Assembly mirror feature cannot create transformed copies of parts directly inside assemblies. Instead, the Assembly mirror feature works by adding mate connectors to parts inside part studios which allow copies of those parts to be assembeled into mirrored positions later on.</p>
 <p><a class="reference internal" href="../_images/assemblyMirrorMate.png"><img alt="An example Assembly mirror part studio" src="../_images/assemblyMirrorMate.png" style="width: 52.5%;" /></a> <a class="reference internal" href="../_images/assemblyMirrorAssembly.png"><img alt="An example of an assembly assisted by Assembly mirror" src="../_images/assemblyMirrorAssembly.png" style="width: 46.5%;" /></a></p>
 </div>
+<p>The Assembly mirror FeatureScript can be found here: <a class="reference external" href="https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/w/665f10f209a25a1f8883d8b5/e/1ad7ea5f13d67f72a3907dde">Assembly mirror document</a></p>
 <div class="section" id="steps-for-creating-mirrored-parts">
 <h2>Steps for creating mirrored parts<a class="headerlink" href="#steps-for-creating-mirrored-parts" title="Permalink to this headline">¶</a></h2>
 <blockquote>
@@ -199,7 +200,7 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><p>Specify one or more <strong>Entities</strong> (parts or surfaces) to find transforms for.</p></li>
+<li><p>Select one or more <strong>Entities</strong> (parts or surfaces) to find transforms for.</p></li>
 <li><p>Select a <strong>Mirror plane</strong> to mirror about.</p></li>
 <li><p>The Assembly mirror feature will automatically try each possible transform type (<strong>Linear</strong>, <strong>Z axis</strong>, <strong>Y axis</strong>, <strong>X axis</strong>, and <strong>Mirror</strong>) for each part and select the one that matches a part to its mirror image.</p></li>
 </ol>
@@ -213,7 +214,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The transform type will only be computed automatically when a feature is first selected. If you make changes to the part later on, you may need to re-select the part or update the transform type manually.</p>
+<p>The transform type will only be computed automatically when a feature is first selected. If you make changes to the part later on, you may need to reselect the part or update the transform type manually.</p>
 </div>
 </div></blockquote>
 </div></blockquote>
@@ -227,7 +228,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Unlike a normal boolean, choosing <strong>Update saved names</strong> should result in <strong>Update saved names</strong> immediately becoming unchecked again. This is expected, and indicates that the update operation has succeeded.</p>
+<p>Unlike a normal boolean, clicking <strong>Update saved names</strong> should result in <strong>Update saved names</strong> immediately becoming unchecked once again. This is expected, and indicates that the update operation has succeeded.</p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -297,7 +298,7 @@
 <blockquote>
 <div><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Unlike a normal boolean, choosing <strong>Update saved names</strong> should result in <strong>Update saved names</strong> immediately becoming unchecked again. This is expected, and indicates that the update operation has succeeded.</p>
+<p>Unlike a normal boolean, clicking <strong>Update saved names</strong> should result in <strong>Update saved names</strong> immediately becoming unchecked once again. This is expected, and indicates that the update operation has succeeded.</p>
 </div>
 </div></blockquote>
 </li>

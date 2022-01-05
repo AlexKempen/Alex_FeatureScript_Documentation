@@ -8,7 +8,7 @@ Alex Kempen's FeatureScript Documentation
 Welcome to the documentation site for all of my FeatureScripts. FeatureScripts are powerful design tools which can be used
 to simply or automate many aspects of design in Onshape.
 
-To learn how to install and use FeatureScripts, see :ref:`getting-started`.
+To learn how to install and use FeatureScripts, see :ref:`Getting Started`.
 
 .. toctree::
    :maxdepth: 2
