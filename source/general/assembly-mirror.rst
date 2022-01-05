@@ -18,8 +18,7 @@ Assembly mirror facilitates assembly behavior by adding mate connectors to parts
 
     |pic1| |pic2|
 
-The Assembly mirror FeatureScript can be found here:
-`Assembly mirror document <https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/w/665f10f209a25a1f8883d8b5/e/1ad7ea5f13d67f72a3907dde>`_
+The Assembly mirror FeatureScript can be found here: `Assembly mirror document <https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/w/665f10f209a25a1f8883d8b5/e/1ad7ea5f13d67f72a3907dde>`_
 
 .. |pic1| image:: assemblyMirrorMate.png
     :width: 52.5%
@@ -38,7 +37,7 @@ Steps for creating mirrored parts
     .. seealso::
         :ref:`result-behavior` for more information.
 
-  #. Specify one or more **Entities** (parts or surfaces) to find transforms for.
+  #. Select one or more **Entities** (parts or surfaces) to find transforms for.
   #. Select a **Mirror plane** to mirror about.
   #. The Assembly mirror feature will automatically try each possible transform type (**Linear**, **Z axis**, **Y axis**, **X axis**, and **Mirror**) for each part and select the one that matches a part to its mirror image.
 
@@ -55,7 +54,7 @@ Steps for creating mirrored parts
         Since Assembly mirror cannot compute surface transform types automatically, the transform type of surfaces will always default to **Mirror** and will need to be changed manually.
 
     .. note::
-        The transform type will only be computed automatically when a feature is first selected. If you make changes to the part later on, you may need to re-select the part or update the transform type manually.
+        The transform type will only be computed automatically when a feature is first selected. If you make changes to the part later on, you may need to reselect the part or update the transform type manually.
 
 #. Choose whether to **Copy part names** to the mirrored versions of entities. 
 
@@ -65,7 +64,7 @@ Steps for creating mirrored parts
     * **Update saved names**, to update the internally saved names of every part
 
     .. note::
-        Unlike a normal boolean, choosing **Update saved names** should result in **Update saved names** immediately becoming unchecked again. This is expected, and indicates that the update operation has succeeded.
+        Unlike a normal boolean, clicking **Update saved names** should result in **Update saved names** immediately becoming unchecked once again. This is expected, and indicates that the update operation has succeeded.
 
     .. seealso::
         :ref:`copy-part-names` for more information.
@@ -138,7 +137,7 @@ There are a few notable limitations to this functionality:
 #. Editing the name of a entity which is being mirrored by Assembly mirror will not automatically update the name of the mirrored entity. To get the mirrored entity names to update, click **Update saved names**.
 
     .. note::
-        Unlike a normal boolean, choosing **Update saved names** should result in **Update saved names** immediately becoming unchecked again. This is expected, and indicates that the update operation has succeeded.
+        Unlike a normal boolean, clicking **Update saved names** should result in **Update saved names** immediately becoming unchecked once again. This is expected, and indicates that the update operation has succeeded.
 
 #. Manually changing the name applied to a entity mirrored by the Assembly mirror FeatureScript will result in the FeatureScript applied value becoming shadowed until all properties of the entity are reset.
 

@@ -9,8 +9,7 @@ FRC belt calculator
 The FRC belt calculator feature allows users to quickly add belt and pulley assemblies to a part studio.
 Belts may be either GT2 or HTD, and configurable 3D printable pulleys may also be added.
 
-The FRC belt calculator FeatureScript can be found here:
-`FRC belt calculator document <https://cad.onshape.com/documents/9cffa92db8b62219498f89af/w/06b332ccabc9d2e0aa0abf88/e/29b8ab37be03b929639dfcd5>`_
+The FRC belt calculator FeatureScript can be found here: `FRC belt calculator document <https://cad.onshape.com/documents/9cffa92db8b62219498f89af/w/06b332ccabc9d2e0aa0abf88/e/29b8ab37be03b929639dfcd5>`_
 
 Steps for creating belt runs
 ----------------------------
