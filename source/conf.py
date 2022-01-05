@@ -34,7 +34,6 @@ author = 'Alex Kempen'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'readthedocs_ext.readthedocs',
     'sphinx_rtd_theme',
 	'myst_parser',
     'sphinx.ext.autosectionlabel',
