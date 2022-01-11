@@ -16,9 +16,9 @@ The Point derive feature is a powerful variant of the Onshape Derive feature whi
 The Point derive FeatureScript can be found here: `Point derive document <https://cad.onshape.com/documents/ad42d9d1532c5ea87446b1e8/w/2ed67f49f3f015638cdeb398/e/05f19623ee55474ef77cab5e>`_
 
 Steps for deriving entities
----------------------------#. Create a Point derive feature by selecting it from your :term:`FeatureScript dropdown`.
+---------------------------
 
-
+#. Create a Point derive feature by selecting it from your :term:`FeatureScript dropdown`.
 #. Specify **Entities to import**.
 #. If desired, select one or more **Locations** to place the selected entities at by clicking sketch vertices or mate connectors in the :term:`graphics window<Graphics window>`.
 #. If the derived part has any mate connectors, they will automatically be instantiated as selectable points in the :term:`graphics window<Graphics window>`. Choose the appropriate point to use by clicking on it.
