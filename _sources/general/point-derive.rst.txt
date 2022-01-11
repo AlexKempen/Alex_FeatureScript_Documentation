@@ -16,21 +16,21 @@ The Point derive feature is a powerful variant of the Onshape Derive feature whi
 The Point derive FeatureScript can be found here: `Point derive document <https://cad.onshape.com/documents/ad42d9d1532c5ea87446b1e8/w/2ed67f49f3f015638cdeb398/e/05f19623ee55474ef77cab5e>`_
 
 Steps for deriving entities
----------------------------
+---------------------------#. Create a Point derive feature by selecting it from your :term:`FeatureScript dropdown`.
 
-#. Create a Point derive feature by selecting it from your :term:`FeatureScript dropdown`.
+
 #. Specify **Entities to import**.
 #. If desired, select one or more **Locations** to place the selected entities at by clicking sketch vertices or mate connectors in the :term:`graphics window<Graphics window>`.
 #. If the derived part has any mate connectors, they will automatically be instantiated as selectable points in the :term:`graphics window<Graphics window>`. Choose the appropriate point to use by clicking on it.
 
     .. note::
-        If your selections to derive don't have any attatched mate connectors, no selectable points will appear in the :term:`graphics window<Graphics window>`.
+        If your selections to derive don't have any attatched mate connectors, no selectable points will appear.
 
 #. If desired, specify a new primary axis to use (**Z axis**, **Y axis**, **X axis**).
 #. Use |flip| and |rotate| to reorient **Entities to import** as needed.
 #. Choose whether to **Delete planes and sketches** from **Entities to import**.
 #. Choose whether to **Delete mate connectors** from **Entities to import**.
-#. If desired, specify a part boolean operation (**Add**, **Remove**, or **Intersect**) and a **Merge scope** (or choose **Merge with all**) to boolean parts in **Entities to import** to existing parts in the part studio
+#. If desired, specify a part boolean operation (**Add**, **Remove**, or **Intersect**) and select a **Merge scope** (or choose **Merge with all**) to boolean parts in **Entities to import** to existing parts in the part studio.
 #. |confirm-feature|
 
 .. image:: pointDeriveUI.png
