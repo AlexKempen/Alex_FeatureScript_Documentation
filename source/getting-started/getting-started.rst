@@ -62,7 +62,7 @@ Steps for using FeatureScripts
 ------------------------------
 
 #. Open your FeatureScript dropdown by clicking on |dropdown| in the rightmost part of your toolbar.
-#. Choose a FeatureScript you've added from the list of FeatureScripts. An instance of the FeatureScript will open and allow you to begin making changes.
+#. Choose a FeatureScript you've added from the list of FeatureScripts. An instance of the FeatureScript will be added to your feature tree and allow you to begin making changes.
 #. Once you've finished making changes, click |checkmark|.
 
 .. Tips for using feature UI

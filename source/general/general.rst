@@ -6,7 +6,7 @@ These FeatureScripts have functionality which are applicable to a wide purpose a
 .. toctree::
    point-derive
    assembly-mirror
-   variable-library-suite
+   .. variable-library-suite
 
 
 
