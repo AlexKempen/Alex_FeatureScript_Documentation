@@ -43,9 +43,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="General Purpose FeatureScripts" href="../general/general.html" />
-    <link rel="prev" title="FRC belt calculator" href="frc-belt-calculator.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,23 +88,12 @@
               
             
             
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="robotics.html">Robotics FeatureScripts</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="frc-belt-calculator.html">FRC belt calculator</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Plate</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-plates-from-sketch-geometry">Steps for creating plates from sketch geometry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-plates-from-faces">Steps for creating plates from faces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-plates-from-existing-plates">Steps for creating plates from existing plates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#steps-for-adding-outer-holes-to-plates">Steps for adding outer holes to plates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#outer-geometry">Outer geometry</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="robotics.html">Robotics FeatureScripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general/general.html">General Purpose FeatureScripts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/miscellaneous.html">Miscellaneous FeatureScripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about-me/about-me.html">About me</a></li>
 </ul>
 
             
@@ -155,8 +142,6 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="robotics.html">Robotics FeatureScripts</a> &raquo;</li>
-        
       <li>Plate</li>
     
     
@@ -183,13 +168,51 @@
 <ol class="arabic">
 <li><p>In the <strong>Plate</strong> tab:</p>
 <blockquote>
-<div><ol class="arabic simple">
-<li></li>
+<div><ol class="arabic">
+<li><p>Define the outside of the plate by selecting <strong>Outer geometery</strong> in a clockwise or counter-clockwise fashion.</p>
+<blockquote>
+<div><p>There are several types of geometry which can be selected:</p>
+<ul class="simple">
+<li><p>Points</p></li>
+<li><p>Lines</p></li>
+<li><p>Arcs</p></li>
+<li><p>Circles</p></li>
+</ul>
+<p>As you click geoemetry, lines will automatically be generated between selections, provided that the selections are not touching.</p>
+<p>After selecting an arc or line, a flip manipulator will be generated in the <a class="reference internal" href="../glossary/glossary.html#term-Graphics-window"><span class="xref std std-term">graphics window</span></a> which allows you to flip the sides the automatically generated lines connect to the boundary.</p>
+<p>Notably, the default behavior of connecting a point is automatically altered by adding a hole to the point in the <strong>Hole</strong> tab. This converts the point into an outer geometry hole, and causes the outer boundary of the plate to be automatically redrawn to honor the specified wall thickness of the plate.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#steps-for-adding-outer-geometry-to-an-existing-plate">Steps for adding outer geometry to an existing plate</a></p>
+</div>
+</div></blockquote>
+</li>
 </ol>
 </div></blockquote>
 </li>
 <li><p>In the <strong>Hole</strong> tab:</p></li>
-<li><p>In the <strong>Finish</strong> tab:</p></li>
+<li><p>In the <strong>Finish</strong> tab:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>If desired, choose <strong>Boolean plate</strong> and then specify a part boolean operation (<strong>Add</strong>, <strong>Remove</strong>, or <strong>Intersect</strong>) and select a <strong>Merge scope</strong> (or choose <strong>Merge with all</strong>) to boolean the plate to existing parts in the part studio.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="steps-for-adding-outer-geometry-to-an-existing-plate">
+<h2>Steps for adding outer geometry to an existing plate<a class="headerlink" href="#steps-for-adding-outer-geometry-to-an-existing-plate" title="Permalink to this headline">¶</a></h2>
+<p>When a plate is created using the <strong>Outer geometry</strong> option, point manipulators are automatically added to each autogenerated line connecting the boundary of the plate.</p>
+<p>Normally, when a plate is being defined, queries are selected in a clockwise or counter-clockwise order. To add additional entities out of order, the following procedure can be followed:</p>
+<ol class="arabic">
+<li><p>In the <strong>Plate</strong> tab:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Select the point manipulator of the autogenerated line you’d like to break to make room for your next selection.</p></li>
+<li><p>Select your next piece of geometry. The selected autogenerated line is broken to make room.</p></li>
+</ol>
+</div></blockquote>
+</li>
 </ol>
 </div>
 <div class="section" id="steps-for-creating-plates-from-faces">
@@ -212,8 +235,8 @@
 <div class="section" id="steps-for-adding-outer-holes-to-plates">
 <h2>Steps for adding outer holes to plates<a class="headerlink" href="#steps-for-adding-outer-holes-to-plates" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="outer-geometry">
-<h2>Outer geometry<a class="headerlink" href="#outer-geometry" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hole-tab">
+<h2>Hole tab<a class="headerlink" href="#hole-tab" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -222,10 +245,6 @@
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../general/general.html" class="btn btn-neutral float-right" title="General Purpose FeatureScripts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="frc-belt-calculator.html" class="btn btn-neutral float-left" title="FRC belt calculator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 
