@@ -11,10 +11,10 @@ Assembly mirror
     :width: 49.5%
     :alt: An example of an assembly assisted by Assembly mirror
 
-Assembly mirror facilitates assembly behavior by adding mate connectors to parts which allow instances of those parts to be quickly placed in mirrored positions in assemblies. 
+Assembly mirror facilitates the assembly of parts by adding mate connectors to parts which allow instances of those parts to be quickly placed in mirrored positions in assemblies.
 
 .. important::
-    Since FeatureScripts cannot be used directly in assemblies, the Assembly mirror feature cannot create transformed copies of parts directly inside assemblies. Instead, the Assembly mirror feature works by adding mate connectors to parts inside part studios which allow copies of those parts to be assembeled into mirrored positions later on.
+    Since FeatureScripts cannot be used directly in assemblies, the Assembly mirror feature cannot create transformed copies of parts directly inside assemblies. Instead, the Assembly mirror feature works by adding mate connectors to parts inside part studios which allow copies of those parts to be assembled into mirrored positions later on.
 
     |pic1| |pic2|
 

@@ -11,7 +11,10 @@ Point derive
    :width: 49.5%
    :alt: A point derive example
 
-The Point derive feature is a powerful variant of the Onshape Derive feature which allows users to specify locations when deriving parts. Point derive also automatically converts mate connectors attached to parts which are being derived into selectable points, making it possible to choose appropriate mounting features when deriving parts.
+The Point derive feature is a powerful variant of the Onshape Derive feature which allows users to specify locations when deriving parts. Point derive also automatically converts mate connectors attached to parts which are being derived into selectable points, making it easy to derive and use standard components.
+
+.. note::
+        Parts don't need to have mate connectors attatched to them to be used with Point derive.
 
 The Point derive FeatureScript can be found here: `Point derive document <https://cad.onshape.com/documents/ad42d9d1532c5ea87446b1e8/w/2ed67f49f3f015638cdeb398/e/05f19623ee55474ef77cab5e>`_
 
