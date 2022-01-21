@@ -1,4 +1,4 @@
-About me
+About Me
 ========
 
 .. image:: 930_Working_Photo.jpg
