@@ -5,7 +5,7 @@ Glossary
 
 .. glossary::
     Graphics window
-        The graphics window refers to the part of Onshape where parts, sketches, and other entities can be selected and chosen.
+        The graphics window refers to the model window, where parts, sketches, and other entities can be seen and interacted with.
 
     Editing logic
         Editing logic is a feature of some FeatureScripts which enables certain parameters to update dynamically as a user is creating or making changes to a feature.
