@@ -61,10 +61,7 @@ Steps for creating mirrored parts
     If you've chosen **Copy part names**, you may also specify:
 
     * A **Prefix** and **Suffix** to add to every mirrored part name
-    * **Update saved names**, to update the internally saved names of every part
-
-    .. note::
-        Unlike a normal boolean, clicking **Update saved names** should result in **Update saved names** immediately becoming unchecked once again. This is expected, and indicates that the update operation has succeeded.
+    * **Update saved names** (and then **Confirm**) to update the internally saved names of every part
 
     .. seealso::
         :ref:`copy-part-names` for more information.
@@ -134,10 +131,10 @@ The copy part name behavior is as follows:
 
 There are a few notable limitations to this functionality:
 
-#. Editing the name of a entity which is being mirrored by Assembly mirror will not automatically update the name of the mirrored entity. To get the mirrored entity names to update, click **Update saved names**.
+#. Editing the name of a entity which is being mirrored by Assembly mirror will not automatically update the name of the mirrored entity. To get the mirrored entity names to update, click **Update saved names**, and then click **Confirm**.
 
     .. note::
-        Unlike a normal boolean, clicking **Update saved names** should result in **Update saved names** immediately becoming unchecked once again. This is expected, and indicates that the update operation has succeeded.
+        Once **Confirm** is choosen, **Update saved names** should become unchecked, and **Confirm** should become hidden. This indicates that the update operation has succeeded.
 
 #. Manually changing the name applied to a entity mirrored by the Assembly mirror FeatureScript will result in the FeatureScript applied value becoming shadowed until all properties of the entity are reset.
 

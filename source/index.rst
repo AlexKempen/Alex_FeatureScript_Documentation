@@ -16,8 +16,8 @@ To learn how to install and use FeatureScripts, see :ref:`Getting Started`.
    getting-started/getting-started
    robotics/robotics
    general/general
-   .. miscellaneous/miscellaneous
    glossary/glossary
+   about-me/about-me
    
 .. Indices and tables
    ==================

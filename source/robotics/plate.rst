@@ -1,3 +1,5 @@
+:orphan:
+
 Plate
 =====
 
@@ -17,12 +19,12 @@ Steps for creating plates from sketch geometry
 
         As you click geoemetry, lines will automatically be generated between selections, provided that the selections are not touching.
 
-        After selecting an arc or line, a flip manipulator will be generated in the :term:`graphics window<Graphics window>`which allows you to flip the sides the automatically generated lines connect to the boundary.
+        After selecting an arc or line, a flip manipulator will be generated in the :term:`graphics window<Graphics window>` which allows you to flip the sides the automatically generated lines connect to the boundary.
 
         Notably, the default behavior of connecting a point is automatically altered by adding a hole to the point in the **Hole** tab. This converts the point into an outer geometry hole, and causes the outer boundary of the plate to be automatically redrawn to honor the specified wall thickness of the plate.
 
         .. seealso::
-            :ref:`Steps for adding outer geometry to an existing plate`
+            `Steps for adding outer geometry to an existing plate`_
 
 #. In the **Hole** tab:
 
