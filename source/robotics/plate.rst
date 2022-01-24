@@ -6,7 +6,7 @@ The Plate FeatureScript can be found here: `Plate document <https://cad.onshape.
 .. warning::
     The latest version of the Plate FeatureScript is still experimental. Thus, there are a few known issues and other bugs associated with it, and it may behave improperly in certain situations.
 
-..Steps for creating plates from sketch geometry
+.. Steps for creating plates from sketch geometry
     ----------------------------------------------
 
     #. In the **Plate** tab:
