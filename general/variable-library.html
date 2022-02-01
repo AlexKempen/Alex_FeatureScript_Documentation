@@ -191,6 +191,7 @@
 <li><p>The variables attatched to those parts are automatically added to the part studio.</p></li>
 <li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
 </ol>
+<a class="reference internal image-reference" href="../_images/variableLibraryUse.png"><img alt="../_images/variableLibraryUse.png" class="align-center" src="../_images/variableLibraryUse.png" style="width: 60%;" /></a>
 </div>
 <div class="section" id="steps-for-creating-variable-libraries-manually">
 <h2>Steps for creating variable libraries manually<a class="headerlink" href="#steps-for-creating-variable-libraries-manually" title="Permalink to this headline">¶</a></h2>
@@ -208,6 +209,7 @@
 <ol class="arabic simple">
 <li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
 </ol>
+<a class="reference internal image-reference" href="../_images/variableLibraryManualUI.png"><img alt="../_images/variableLibraryManualUI.png" class="align-center" src="../_images/variableLibraryManualUI.png" style="width: 40%;" /></a>
 </div>
 <div class="section" id="steps-for-creating-variable-libraries-from-existing-variables">
 <h2>Steps for creating variable libraries from existing variables<a class="headerlink" href="#steps-for-creating-variable-libraries-from-existing-variables" title="Permalink to this headline">¶</a></h2>
@@ -220,7 +222,7 @@
 <li><p>Set the Variable library usage behavior to <strong>Create</strong>.</p></li>
 <li><p>Set the library creation type to <strong>Automatic</strong>.</p></li>
 <li><p>Specify a <strong>Library name</strong>.</p></li>
-<li><p>A library cube part is created containing all ofthe variables currently visible to the variable library feature.</p></li>
+<li><p>A library cube part is created containing all of the variables currently visible to the variable library feature.</p></li>
 <li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/variableLibraryAutoUI.png"><img alt="../_images/variableLibraryAutoUI.png" class="align-center" src="../_images/variableLibraryAutoUI.png" style="width: 40%;" /></a>
@@ -228,12 +230,20 @@
 <div class="section" id="steps-for-creating-variable-libraries-from-csv-files">
 <h2>Steps for creating variable libraries from CSV files<a class="headerlink" href="#steps-for-creating-variable-libraries-from-csv-files" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Open the Variable Library Template, make a copy, and then edit it as desired.</p></li>
+<li><p>Open the Variable Library Template, make a copy, and then edit the template as desired.</p></li>
 </ol>
 <p>The Variable Library Template can be found here:
 <a class="reference external" href="https://docs.google.com/spreadsheets/d/1k5xZ5Lqxz4xRqVlRQ4j5USSUi_MWBjeumz-F2teNtok/edit#gid=0">Variable Library Template</a></p>
+<a class="reference internal image-reference" href="../_images/variableLibraryTemplate.png"><img alt="../_images/variableLibraryTemplate.png" class="align-center" src="../_images/variableLibraryTemplate.png" style="width: 60%;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Keep in mind the following while adding variables:
+* An arbitrary amount of libraries may be created.
+* Variable names must start with a single letter, followed by letters, numbers, and underscores (_). Spaces and other special characters are not allowed.
+* Variable units must parse to a valid Onshape unit abbreviation like in, inch, deg, or degree. Punctuation and capitalization is ignored.</p>
+</div>
 <ol class="arabic simple">
-<li><p>Download the template file as a .csv (Comma Seperated Values) file, then upload it into Onshape.</p></li>
+<li><p>AFter you’ve finished editing, download the template file as a .csv (Comma Seperated Values) file, then upload it into Onshape.</p></li>
 <li><ol class="arabic simple">
 <li><p>Create a Variable library feature in a part studio in the same document as your uploaded CSV file.</p></li>
 </ol>
@@ -250,15 +260,18 @@
 <span id="id1"></span><h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Permalink to this headline">¶</a></h2>
 <p>Descriptions can be added to manually created variables and to variables imported from CSV files. These descriptions can then be seen later on using a custom table.</p>
 <p>To add and use the variable library custom table, you will need to first add it to your custom table tab.</p>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>Open the <strong>Custom tables</strong> panel by clicking on the corresponding button on the far right side of your screen.</p></li>
-<li><p>Choose <strong>Add custom table</strong>, then copy and paste the following link into the search bar:</p>
+</ol>
+<a class="reference internal image-reference" href="../_images/tableLocation.png"><img alt="../_images/tableLocation.png" class="align-center" src="../_images/tableLocation.png" style="width: 70%;" /></a>
+<ol class="arabic">
+<li><p>Choose <strong>Add custom tables</strong>, then copy and paste the following link into the search bar:</p>
 <blockquote>
 <div><p><a class="reference external" href="https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/2ac1b130ef1d31461f8fca54">https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/2ac1b130ef1d31461f8fca54</a></p>
 </div></blockquote>
 </li>
 <li><p>Open the resulting document and click <strong>Library variables</strong> to add it to your custom tables.</p></li>
-<li><p>If your part studio has one or more variables from a library variable feature, they are displayed in a table format.</p></li>
+<li><p>Variables in your part studio which have been created by the library variable feature are displayed in a table format (along with their description, if added).</p></li>
 </ol>
 </div>
 </div>
