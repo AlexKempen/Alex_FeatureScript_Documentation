@@ -7,6 +7,10 @@ Glossary
     Graphics window
         The graphics window refers to the model window, where parts, sketches, and other entities can be seen and interacted with.
 
+        .. image:: /images/graphicsWindow.png
+            :width: 50%
+            :align: center
+
     Editing logic
         Editing logic is a feature of some FeatureScripts which enables certain parameters to update dynamically as a user is creating or making changes to a feature.
         For example, creating an extrude which hits another part will result in the boolean operation of the extrude feature being set to **Add**, and the other part being added to the **Merge scope**.
