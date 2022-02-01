@@ -12,6 +12,10 @@ Steps for using variable libraries
 #. The variables attatched to those parts are automatically added to the part studio.
 #. |confirm-feature|
 
+.. image:: variableLibraryUse.png
+    :width: 60%
+    :align: center
+
 Steps for creating variable libraries manually
 ----------------------------------------------
 #. Create a Variable Library feature in a part studio.
@@ -25,6 +29,10 @@ Steps for creating variable libraries manually
 
 #. |confirm-feature|
 
+.. image:: variableLibraryManualUI.png
+    :width: 40%
+    :align: center
+
 Steps for creating variable libraries from existing variables
 -------------------------------------------------------------
 
@@ -35,7 +43,7 @@ Steps for creating variable libraries from existing variables
 #. Set the Variable library usage behavior to **Create**.
 #. Set the library creation type to **Automatic**.
 #. Specify a **Library name**.
-#. A library cube part is created containing all ofthe variables currently visible to the variable library feature.
+#. A library cube part is created containing all of the variables currently visible to the variable library feature.
 #. |confirm-feature|
 
 .. image:: variableLibraryAutoUI.png
@@ -45,12 +53,22 @@ Steps for creating variable libraries from existing variables
 Steps for creating variable libraries from CSV files
 ----------------------------------------------------
 
-#. Open the Variable Library Template, make a copy, and then edit it as desired.
+#. Open the Variable Library Template, make a copy, and then edit the template as desired.
 
 The Variable Library Template can be found here:
 `Variable Library Template <https://docs.google.com/spreadsheets/d/1k5xZ5Lqxz4xRqVlRQ4j5USSUi_MWBjeumz-F2teNtok/edit#gid=0>`_
 
-#. Download the template file as a .csv (Comma Seperated Values) file, then upload it into Onshape.
+.. image:: variableLibraryTemplate.png
+    :width: 60%
+    :align: center
+
+.. note::
+    Keep in mind the following while adding variables:
+    * An arbitrary amount of libraries may be created.
+    * Variable names must start with a single letter, followed by letters, numbers, and underscores (_). Spaces and other special characters are not allowed.
+    * Variable units must parse to a valid Onshape unit abbreviation like in, inch, deg, or degree. Punctuation and capitalization is ignored.
+
+#. AFter you've finished editing, download the template file as a .csv (Comma Seperated Values) file, then upload it into Onshape.
 #. #. Create a Variable library feature in a part studio in the same document as your uploaded CSV file.
 #. Set the Variable library usage behavior to **Create**.
 #. Set the library creation type to **Import**.
@@ -69,9 +87,14 @@ Descriptions can be added to manually created variables and to variables importe
 To add and use the variable library custom table, you will need to first add it to your custom table tab.
 
 #. Open the **Custom tables** panel by clicking on the corresponding button on the far right side of your screen.
-#. Choose **Add custom table**, then copy and paste the following link into the search bar:
+
+.. image:: tableLocation.png
+    :width: 70%
+    :align: center
+
+#. Choose **Add custom tables**, then copy and paste the following link into the search bar:
 
     `https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/2ac1b130ef1d31461f8fca54 <https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/2ac1b130ef1d31461f8fca54>`_
 
 #. Open the resulting document and click **Library variables** to add it to your custom tables.
-#. If your part studio has one or more variables from a library variable feature, they are displayed in a table format.
+#. Variables in your part studio which have been created by the library variable feature are displayed in a table format (along with their description, if added).
