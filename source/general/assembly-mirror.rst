@@ -56,16 +56,8 @@ Steps for creating mirrored parts
     .. note::
         The transform type will only be computed automatically when a feature is first selected. If you make changes to the part later on, you may need to reselect the part or update the transform type manually.
 
-#. Choose whether to **Copy part names** to the mirrored versions of entities. 
-
-    If you've chosen **Copy part names**, you may also specify:
-
-    * A **Prefix** and **Suffix** to add to every mirrored part name
-    * **Update saved names** (and then **Confirm**) to update the internally saved names of every part
-
-    .. seealso::
-        :ref:`copy-part-names` for more information.
-
+#. Choose whether to **Add prefix and suffix** to the mirrored versions of entities. 
+#. If **Add prefix and suffix** is selected and the name of the part is changed, the name of the mirrored part may not update to match the change. This can be fixed by selecting **Update saved names**, and then **Confirm**, to update the internally saved names of every part
 #. |confirm-feature|
 
 .. image:: assemblyMirrorUI.png
@@ -119,31 +111,3 @@ Assembly mirror offers two options for locating mirrored parts; **Part center** 
 
 .. tip::
     When using **Origin**, make assembling faster and more robust by createing a mate connector at the assembly origin and selecting it via the Mate Features list.
-
-.. _copy-part-names:
-
-Copy part names
----------------
-The copy part name behavior is as follows:
-
-#. When parts are first selected, their names at the time of selection are also saved.
-#. If an entity has its transform type set to **Mirror**, a mirror of that entity is created. If **Copy part names** is enabled, the saved entity name is applied (along with the **Suffix** and **Prefix**, if specified).
-
-There are a few notable limitations to this functionality:
-
-#. Editing the name of a entity which is being mirrored by Assembly mirror will not automatically update the name of the mirrored entity. To get the mirrored entity names to update, click **Update saved names**, and then click **Confirm**.
-
-    .. note::
-        Once **Confirm** is choosen, **Update saved names** should become unchecked, and **Confirm** should become hidden. This indicates that the update operation has succeeded.
-
-#. Manually changing the name applied to a entity mirrored by the Assembly mirror FeatureScript will result in the FeatureScript applied value becoming shadowed until all properties of the entity are reset.
-
-.. tip::
-    Manually changing any property on a part which has been set by a FeatureScript, like color, material, or name, will shadow the FeatureScript applied property until all properties on the part are reset.
-
-    To reset the properties of a part:
-
-    #. Right click on the part in the :term:`parts list<Parts list>`.
-    #. Click **Properties...**.
-    #. Click **Reset all**.
-    #. Click **Save**.
