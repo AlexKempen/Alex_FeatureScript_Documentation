@@ -29,14 +29,14 @@ Steps for deriving entities
     .. note::
         If your selections to derive don't have any attatched mate connectors, no selectable points will appear.
 
-#. If desired, specify a new primary axis to use (**Z axis**, **Y axis**, **X axis**).
 #. Use |flip| and |rotate| to reorient **Entities to import** as needed.
+#. Choose whether to **Move** derived entities relative to their respective **Locations**.
 #. Choose whether to **Delete planes and sketches** from **Entities to import**.
 #. Choose whether to **Delete mate connectors** from **Entities to import**.
 #. If desired, specify a part boolean operation (**Add**, **Remove**, or **Intersect**) and select a **Merge scope** (or choose **Merge with all**) to boolean parts in **Entities to import** to existing parts in the part studio.
 #. |confirm-feature|
 
-.. image:: pointDeriveUI.png
+.. image:: pointDeriveUIV2.png
         :width: 40%
         :align: center
         :alt: The point derive user interface

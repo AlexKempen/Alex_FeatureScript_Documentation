@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Variable library &mdash; Alex&#39;s FeatureScript Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Glossary" href="../glossary/glossary.html" />
+    <link rel="prev" title="Assembly mirror" href="assembly-mirror.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Alex's FeatureScript Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotics/robotics.html">Robotics FeatureScripts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="general.html">General Purpose FeatureScripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="point-derive.html">Point derive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edge-derive.html">Edge derive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assembly-mirror.html">Assembly mirror</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Variable library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#steps-for-using-variable-libraries">Steps for using variable libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-variable-libraries-manually">Steps for creating variable libraries manually</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-variable-libraries-from-existing-variables">Steps for creating variable libraries from existing variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps-for-creating-variable-libraries-from-csv-files">Steps for creating variable libraries from CSV files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#variable-descriptions">Variable descriptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about-me/about-me.html">About Me</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Alex's FeatureScript Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="general.html">General Purpose FeatureScripts</a> &raquo;</li>
+        
+      <li>Variable library</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/general/variable-library.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="variable-library">
+<h1>Variable library<a class="headerlink" href="#variable-library" title="Permalink to this headline">¶</a></h1>
+<p>The Variable library feature makes it possible to create and use global variables in Onshape by storing variables on cube parts. Variables may also have associated descriptions which can be viewed via a custom table.</p>
+<p>The Variable library FeatureScript can be found here: <a class="reference external" href="https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/e4e782e0fe48a9227b9440aa">Variable library suite document</a></p>
+<div class="section" id="steps-for-using-variable-libraries">
+<h2>Steps for using variable libraries<a class="headerlink" href="#steps-for-using-variable-libraries" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create a Variable library feature in a part studio.</p></li>
+<li><p>Set the Variable library useage behavior to <strong>Use</strong>.</p></li>
+<li><p>Click <strong>Select Part Studio…</strong>, then navigate to another part studio containing one or more library variable cubes and select them.</p></li>
+<li><p>The variables attatched to those parts are automatically added to the part studio.</p></li>
+<li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
+</ol>
+</div>
+<div class="section" id="steps-for-creating-variable-libraries-manually">
+<h2>Steps for creating variable libraries manually<a class="headerlink" href="#steps-for-creating-variable-libraries-manually" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create a Variable Library feature in a part studio.</p></li>
+<li><p>Set the Variable library usage behavior to <strong>Create</strong>.</p></li>
+<li><p>Set the library creation type to <strong>Manual</strong>.</p></li>
+<li><p>Add one or more variables. A library cube part is created containing each added variable.</p></li>
+<li><p>If desired, choose <strong>Add descriptions</strong>, then add descriptions to each variable in <strong>Variables</strong>.</p></li>
+</ol>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#variable-descriptions"><span class="std std-ref">Variable descriptions</span></a> for more information.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
+</ol>
+</div>
+<div class="section" id="steps-for-creating-variable-libraries-from-existing-variables">
+<h2>Steps for creating variable libraries from existing variables<a class="headerlink" href="#steps-for-creating-variable-libraries-from-existing-variables" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It isn’t currently possible to add custom variable descriptions when creating variable libraries this way.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Create a Variable library feature in a part studio with one or more existing variables.</p></li>
+<li><p>Set the Variable library usage behavior to <strong>Create</strong>.</p></li>
+<li><p>Set the library creation type to <strong>Automatic</strong>.</p></li>
+<li><p>Specify a <strong>Library name</strong>.</p></li>
+<li><p>A library cube part is created containing all ofthe variables currently visible to the variable library feature.</p></li>
+<li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/variableLibraryAutoUI.png"><img alt="../_images/variableLibraryAutoUI.png" class="align-center" src="../_images/variableLibraryAutoUI.png" style="width: 40%;" /></a>
+</div>
+<div class="section" id="steps-for-creating-variable-libraries-from-csv-files">
+<h2>Steps for creating variable libraries from CSV files<a class="headerlink" href="#steps-for-creating-variable-libraries-from-csv-files" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Open the Variable Library Template, make a copy, and then edit it as desired.</p></li>
+</ol>
+<p>The Variable Library Template can be found here:
+<a class="reference external" href="https://docs.google.com/spreadsheets/d/1k5xZ5Lqxz4xRqVlRQ4j5USSUi_MWBjeumz-F2teNtok/edit#gid=0">Variable Library Template</a></p>
+<ol class="arabic simple">
+<li><p>Download the template file as a .csv (Comma Seperated Values) file, then upload it into Onshape.</p></li>
+<li><ol class="arabic simple">
+<li><p>Create a Variable library feature in a part studio in the same document as your uploaded CSV file.</p></li>
+</ol>
+</li>
+<li><p>Set the Variable library usage behavior to <strong>Create</strong>.</p></li>
+<li><p>Set the library creation type to <strong>Import</strong>.</p></li>
+<li><p>Select the <strong>CSV file</strong> you uploaded to Onshape.</p></li>
+<li><p>If your CSV file has a top-level header row, select <strong>Skip first row</strong>.</p></li>
+<li><p>The variable library feature should add one or more variable library cube parts to the part studio.</p></li>
+<li><p>Click <a class="reference internal" href="../_images/greencheck.png"><img alt="checkmark" src="../_images/greencheck.png" style="height: 18px;" /></a>.</p></li>
+</ol>
+</div>
+<div class="section" id="variable-descriptions">
+<span id="id1"></span><h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Permalink to this headline">¶</a></h2>
+<p>Descriptions can be added to manually created variables and to variables imported from CSV files. These descriptions can then be seen later on using a custom table.</p>
+<p>To add and use the variable library custom table, you will need to first add it to your custom table tab.</p>
+<ol class="arabic">
+<li><p>Open the <strong>Custom tables</strong> panel by clicking on the corresponding button on the far right side of your screen.</p></li>
+<li><p>Choose <strong>Add custom table</strong>, then copy and paste the following link into the search bar:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/2ac1b130ef1d31461f8fca54">https://cad.onshape.com/documents/d33530b06909083111cf1770/w/5be0429e68b3332e158a3559/e/2ac1b130ef1d31461f8fca54</a></p>
+</div></blockquote>
+</li>
+<li><p>Open the resulting document and click <strong>Library variables</strong> to add it to your custom tables.</p></li>
+<li><p>If your part studio has one or more variables from a library variable feature, they are displayed in a table format.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../glossary/glossary.html" class="btn btn-neutral float-right" title="Glossary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="assembly-mirror.html" class="btn btn-neutral float-left" title="Assembly mirror" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alex Kempen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
